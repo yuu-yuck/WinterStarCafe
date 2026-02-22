@@ -1,0 +1,280 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: "Lexend";
+  padding: 2rem;
+  color: white;
+  background-color: #37474f;
+}
+
+/*Creating a line element*/
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.05rem;
+  border-top-style: solid;
+  border-top-color:#9caeb6;
+}
+/*Creating a line element*/
+
+
+/*In-text Links*/
+a {
+  font-family: "Lexend";
+  color: #ff9b3e;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: white;
+  text-decoration: underline;
+}
+/*In-text Links ^^^*/
+
+/*Navigation styling*/
+nav a{
+  display: inline-block;
+  border: 2px solid;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #9caeb6;
+  transition-property: background-color; 
+  margin-left: 1rem;
+  }
+
+nav a:hover, nav a:focus {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #fff;
+  background-color: #9caeb6;
+  border-color: #9caeb6;
+  }
+
+/*Navigation styling ^^^*/
+
+/*Default button styling*/
+button{
+  display: inline-block;
+  background-color: white;
+  color: #37474f;
+  text-decoration: none;
+  transition-property: background-color; 
+  border-width:0.2em;
+  padding: 0.5em;
+  margin-top: 2em;
+  border-radius: 5px;
+  border-color: #9caeb6;
+}
+
+button:hover, button:focus{
+  display: inline-block;
+  background-color: #9caeb6;
+  color: white;
+  border-color: #9caeb6;
+  text-decoration: none;
+  border-width:0.2em;
+  padding: 0.5em;
+}
+/*Default button styling ^^^*/
+
+/*User Input text box styling*/
+form {
+  padding: 1rem;
+  font-family: "Lexend";
+  color: white;
+  font-weight: bold;
+  max-width: fit-content;
+}
+
+input{
+  border-radius: 50px;
+  background-color: white;
+  border-width:0.2em;
+  padding:0.3em;
+  margin-left: 0.5em;
+  border-color: #9caeb6;
+}
+
+label {
+  font-size: 13px;
+  color: white;
+}
+/*User Input text box styling ^^^*/
+
+/*Product listing layout*/
+.menuGallery {
+  display: flex;               
+  justify-content: space-between; 
+  gap: 1rem;                   
+  flex-wrap: wrap;            
+}
+
+.menuItem {
+  flex-grow: 1;      
+  flex-shrink: 1;    
+  flex-basis: 30%;  
+  text-align: left;
+  border-radius: 3px;
+
+  /*drop shadow function taken from: https://www.w3schools.com/cssref/func_drop-shadow.php*/
+  filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
+
+  width: 100%;             
+  height: auto;           
+  background-color: #ff9b3e;
+  top: 0;                 
+  left: 0;
+}
+
+.menuItem h3 {
+  text-align: center;
+  margin-top: 0;   
+  margin-bottom: 1em; 
+}
+
+.container{
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  max-width: 700px;
+}
+
+.container:hover {
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  max-width: 700px;
+  filter: grayscale(100%);
+}
+
+.image {
+  display: block;
+  max-width: 250px;
+  height: auto;
+}
+
+.imgSizing{
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin-right: 2em;
+}
+
+.imgSizing2{
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin-right: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  color: black;
+}
+
+/*Product listing layout ^^^*/
+
+/*Checkout layout*/
+.checkoutLayout {
+  display: flex;   
+  gap: 1em;     
+  align-items: flex-start;
+}
+
+#orderSummary p,
+#paymentForm p{
+  font-size: 13px;
+}
+
+#orderSummary h4,
+#paymentForm h4{
+  margin-top: 0;
+
+  max-width: 100%;
+  padding-bottom:1em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dee4e7;
+}
+
+#orderSummary,
+#paymentForm {
+  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;      
+  border: 1px solid #dee4e7;
+  background-color: #202a2e;
+  padding: 1.5em;
+  border-radius: 3px;
+
+  filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
+}
+
+.inline{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.topMargin{
+  margin-top: 7em;
+}
+/*Checkout layout ^^^*/
+
+h5{
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+li {
+  font-family: "Lexend";
+  color: white;
+}
+
+h1 {
+  font-family: "Lexend";
+  font-weight: bolder;
+  color: #ff9b3e;
+}
+
+h2 {
+  margin-top: 6rem;
+  font-family: "Lexend";
+  font-weight: bold;
+  color: #ff9b3e;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-family: "Lexend";
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-family: "Lexend";
+}
+
+p {
+  margin-top: 0;
+  font-family: "Lexend";
+  color: white;
+}
+
+/*Implemeted code display styling*/
+code {
+  color: #37474f; 
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/*Implemeted code display styling  ^^^*/
