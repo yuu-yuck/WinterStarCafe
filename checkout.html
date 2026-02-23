@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+
+        <!--Link to Lexend Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+        <title>Winter Star Cafe</title>
+    </head> 
+  <body>
+    <header>
+        <h1>Checkout</h1>
+            <nav>  
+                <a href="index.html">Home</a>
+                <a href="index.html">Menu</a>
+                <a href="#aboutUs">About</a>
+                <a href="index.html">Locations</a>
+                <a href="#contactUs">Contact Us</a>
+                <a href="checkout.html">Checkout Cart</a>
+            </nav>
+    </header> <br>
+
+    <div class="checkoutLayout">
+      <div id="paymentForm">
+        <h4>PAYMENT FORM</h4>
+
+          <form action="payment">
+            <input type="radio" name="paytype" id="payment">
+            <label for="payment">Debit</label>
+            <input type="radio" name="paytype" id="payment">
+            <label for="payment">Credit</label> <br> <br>
+            <label for="payment">Card Number:</label>
+            <input type="text" name="number" id="payment"> <br> <br>
+            <label for="payment">CV:</label>
+            <input type="text" name="cv" id="payment"> <br><br>
+            <label for="payment">Name:</label>
+            <input type="text" name="name" id="payment"> <br> <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form> <br>
+      </div>
+
+      <div id="orderSummary">
+        <h4>ORDER SUMMARY</h4>
+
+        <div class="inline">
+          <h5>Cheese Pizza 1</h5> <h5>(M) $17.75</h5>
+        </div>
+
+        <div class="inline">
+          <h5>Strawberry Short Cake 2</h5> <h5>$7.75</h5>
+        </div>
+
+        <p>Tax calculated based on shipping address.</p>
+
+        <div class="inline topMargin element">
+          <h5>Subtotal</h5> <h5>$33.25 CAD</h5>
+        </div>
+
+        <div class="inline">
+          <h5>Estimated Total</h5> <h5>$38.97 CAD</h5>
+        </div>
+
+        <button type="submit">CONTINUE SHOPPING</button>
+      </div>
+    </div>
+  </body>
