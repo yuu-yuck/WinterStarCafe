@@ -21,7 +21,7 @@
   font-size: 100px;
 
   position: absolute;
-  top: -70px;
+  top: 0.5rem;
   left: 3rem;
   z-index: 1;
 }
@@ -30,7 +30,7 @@
   font-size: 30px;
 
   position: absolute;
-  top: 140px;
+  top: 10rem;
   left: 3rem;
   z-index: 1;
 }
@@ -55,8 +55,81 @@
   max-width: 500px;
   height: auto;
   margin-right: 2em;
+  margin-top: 7rem;
+}
+
+.aboutItem{
+  flex-grow: 1;      
+  flex-shrink: 1;     
+  text-align: left;
 }
 /*About Us Layout^^^*/
+
+/*Menu Section Layout*/
+.rightAlign{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0rem;
+}
+
+button a{
+  text-decoration: none;
+}
+/*Menu Section Layout*/
+
+/*Contact Us Layout*/
+#contactBanner h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#contactUs h4 {
+  text-align: left;
+}
+
+#contactBanner p{
+  max-width: 400px;
+}
+
+#contactBanner{
+  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;      
+  border: 1px solid #dee4e7;
+  background-color: #202a2e;
+  padding: 1.5em;
+  border-radius: 3px;
+
+  filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
+
+  max-width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+/*I did some research to figure out how i can add space to this specific list without using div (source: https://techbrij.com/css-selector-adjacent-child-sibling)*/
+.noBullets + .noBullets {
+  margin-top: 1rem;
+}
+
+.aboutItemRight{
+  flex-grow: 1;      
+  flex-shrink: 1;     
+  text-align: left;
+  margin-top: 0;
+}
+
+#contactUs .splitScreen {
+  align-items: flex-start;
+}
+
+/*Contact Us Layout ^^^*/
 
 /*Remove points from lists */
 .noBullets {
@@ -67,6 +140,15 @@
 /*Remove points from lists^^^*/
 
 /*Webpage Footer Layout*/
+
+#footer .element{
+  border-top: none;
+  margin-bottom: 1rem;
+  border-bottom-width: 0.05rem;
+  border-bottom-style: solid;
+  border-bottom-color:#9caeb6;
+}
+
 #footer{
   max-width: 100%;
   height: auto;
@@ -81,14 +163,14 @@
   margin-left:7rem;
 }
 
-.item{
+.footerItem{
   flex-grow: 1;      
   flex-shrink: 1;     
   text-align: left;
   margin-left: 7rem;
 }
 
-.itemRight{
+.footerItemRight{
   flex-grow: 1;      
   flex-shrink: 1;     
   text-align: left;
@@ -99,10 +181,9 @@
 .splitScreen{
   display: flex; 
   flex: 1;             
-  justify-content: flex-start; 
+  align-items: flex-end;
   gap: 1rem;                   
-  flex-wrap: wrap;
-  align-items: flex-end            
+  flex-wrap: wrap;         
 }
 /*Webpage footer layout^^^*/
 

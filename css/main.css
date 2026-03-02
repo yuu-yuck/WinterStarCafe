@@ -22,18 +22,13 @@ body {
   margin: 2rem;
 }
 
-p{
-  padding-top: 3rem;
-  max-width: 600px;
-}
-
 /*Creating a line element*/
 .element {
-  margin-bottom: 5rem;
-  margin-left: 7rem;
-  border-bottom-width: 0.05rem;
-  border-bottom-style: solid;
-  border-bottom-color:#9caeb6;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-top-width: 0.05rem;
+  border-top-style: solid;
+  border-top-color:#9caeb6;
 
 }
 /*Creating a line element*/
@@ -125,6 +120,15 @@ nav a:hover, nav a:focus {
 /*Navigation styling ^^^*/
 
 /*Default button styling*/
+button a{
+  color: #37474f;
+  text-decoration: none;
+}
+
+button a:hover, a:focus{
+  text-decoration: none;
+}
+
 button{
   display: inline-block;
   background-color: white;
@@ -134,6 +138,7 @@ button{
   border-width:0.2em;
   padding: 0.5em;
   margin-top: 2em;
+  margin-right:1rem;
   border-radius: 2px;
   border-color: #9caeb6;
 }
@@ -178,7 +183,8 @@ label {
   display: flex;               
   justify-content: space-between; 
   gap: 1rem;                   
-  flex-wrap: wrap;            
+  flex-wrap: wrap;   
+  align-items: center;         
 }
 
 .menuItem {
@@ -193,7 +199,7 @@ label {
 
   width: 100%;             
   height: auto;           
-  background-color: #ff9b3e;
+  background-color: #202a2e;
   top: 0;                 
   left: 0;
 }
@@ -299,7 +305,8 @@ li {
 }
 
 h1 {
-  margin-top: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 0.05rem;
   font-size: 42px;
   font-family: "Lexend";
   font-weight: bolder;
@@ -322,7 +329,8 @@ h3 {
 }
 
 h4 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.05rem;
+  margin-right: 1rem;
   text-align: right;
   font-weight: normal;
   font-size: 18.72px;
@@ -333,6 +341,9 @@ p {
   margin-top: 0;
   font-family: "Lexend";
   color: white;
+
+  padding-top: 3rem;
+  max-width: 600px;
 }
 
 /*Implemeted code display styling*/

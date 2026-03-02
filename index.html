@@ -20,13 +20,12 @@
             <nav>  
                 <a href="#home" class="iconOverride"><img src="img/icon2.png"></a>
 
-                <a href="index.html">Menu</a>
                 <a href="#aboutUs">About Us</a>
-                <a href="index.html">Locations</a>
+                <a href="menu.html">Menu</a>
+                <a href="#footer">Locations</a>
                 <a href="#contactUs">Contact Us</a>
-                <a href="checkout.html">Checkout Cart</a>
+                <a href="checkout.html">Checkout</a>
 
-                <button type="submit">Order Now</button>
             </nav>
         </header> 
 
@@ -41,7 +40,6 @@
 
         </section>
 
-        <div class="pageContent">
         <section id="aboutUs">
 
             <div class="menuGallery">
@@ -50,6 +48,7 @@
                     <img src="img/coffee.jpg" class="imgSizing">
                 </div>
 
+                
                 <div class="item">
 
                     <h1>WinterStar Café</h1>
@@ -61,11 +60,22 @@
 
         </section>
 
+        <div class="pageContent">
         <section id="discover">
 
-            <h2 class="element">Menu</h2>
+            <div class="element splitScreen">
+                <div class="aboutItem">
+                    <h1>Menu</h1>
+                </div>
 
-            <h4>Discover Your New Fixation</h4>
+               <div class="aboutItem">
+                    <div class="rightAlign">
+                        <h4>Discover Your New Fixation</h4>
+                        <button type="button"><a href="checkout.html">Order Now</a></button>
+                        <button type="button"><a href="menu.html">View Menu</a></button>
+                    </div>
+                </div>
+            </div>
 
             <div class="menuGallery">
                 <div class="menuItem">
@@ -166,34 +176,69 @@
                     <li>Tiramisu Cake   $7.75</li>
                     </ol>
                 </div>
-
-                
             </div>
-
 
         </section>
 
         <section id="contactUs">
-            <h2 class="element">Let's keep in touch!</h2>
+            <div class="element">
+                <h1>Let's keep in touch!</h1>
+            </div>
 
-            <div id="paymentForm">
-                <h4>CONTACT FORM</h4>
+            <div id="contactBanner">
+                <h4>Contact Us</h4>
+                <p>If you have any feedback about your experience at WinterStar Café whether it’s a suggestion, concern, or compliment we’d love to hear from you! We truly appreciate your continued support.</p>
+            </div>
+
+
+            <div class="splitScreen">
+
+                <div class="aboutItem">
+                <h4>Contact Form</h4>
 
                 <form action="payment">
-                    <label for="payment">Your Name:</label>
-                    <input type="text" name="number" id="payment" placeholder="First and Last Name"> <br> <br>
-                    <label for="payment">Email:</label>
-                    <input type="text" name="cv" id="payment" placeholder="Email"> <br><br>
-                    <label for="payment">Subject:</label>
-                    <input type="text" name="name" id="payment" placeholder="Subject Line"> <br> <br>
 
-                    <!--extendable box-->
-                    <label for="form-comment">Comment:</label>
-                    <textarea placeholder="Please place comment here"></textarea> <br><br>
+                    <div class="inputGroup">
+                        <input type="text" name="number" placeholder="First and Last Name">
+                        <label>Your Name</label>
+                    </div>
 
-                    <button type="submit">Submit</button>
+                    <div class="inputGroup">
+                        <input type="text" name="cv" placeholder="Email">
+                        <label for="payment">Email</label>
+                    </div>
+                   
+                    <div class="inputGroup">
+                        <input type="text" name="name" id="payment" placeholder="Subject Line"> 
+                        <label for="payment">Subject</label>
+                    </div>
+                    
+                    <div class="inputGroup">
+                        <!--extendable box-->
+                        <textarea placeholder="Please place comment here"></textarea>
+                        <label for="form-comment">Comment</label>
+                    </div>
+
+                    <button type="reset">Submit</button>
                     <button type="reset">Reset</button>
                 </form>
+                </div>
+
+                <div class="aboutItemRight">
+                    <h4>Headquarter's Address</h4>
+
+                    <ol class="noBullets">
+                        <li>Harbour Centre</li>
+                        <li>515 West Hastings Street</li>
+                        <li>Vancouver, B.C.</li>
+                        <li>Canada. V6B 5K3</li>
+                    </ol>
+
+                    <ol class="noBullets">
+                        <li>Phone Number: +1 778 782 6930</li>
+                        <li>Security: +1 778 782 5029</li>
+                    </ol>
+                </div>
             </div>
 
         </section>
@@ -205,7 +250,7 @@
             <h3>LOCATIONS</h3>
 
             <div class="splitScreen">
-                <div class="item">
+                <div class="footerItem">
                     <ol class="noBullets">
                         <li><a href="https://en.wikipedia.org/wiki/Party">Fort Langley</a></li>
                         <li><a href="https://en.wikipedia.org/wiki/Party">Latimer Village</a></li>
@@ -216,7 +261,7 @@
                     </ol>
                 </div>
 
-                <div class="itemRight">
+                <div class="footerItemRight">
                     <ol class="noBullets">
                         <button type="submit">Contact Us</button> <br><br>
                         <li>All rights reserved to Yuka Duchesne and Tejas Singh - © WinterStar Café co. 2026</li>
