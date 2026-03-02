@@ -251,3 +251,14 @@ textarea{
   align-items: center; 
 }
 
+.italic{
+  font-style: italic;
+}
+
+#citation {
+  margin-left: 7rem;
+}
+
+#citatio h1{
+  left: 0;
+}
