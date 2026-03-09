@@ -1,0 +1,80 @@
+/*Checkout layout*/
+
+#cart h1{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+}
+
+#cart h5{
+    margin-top: 1rem;
+}
+
+#cart h4{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-bottom-width: 0.05rem;
+    border-bottom-style: solid;
+    border-bottom-color: #9caeb6;
+}
+.checkoutLayout {
+  display: flex;   
+  gap: 2rem;     
+  align-items: flex-start;
+}
+
+#orderSummary p,
+#paymentForm p{
+  font-size: 13px;
+}
+
+#orderSummary,
+#paymentForm {
+  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;      
+  background-color: #202a2e;
+  padding: 1.5em;
+  border-radius: 3px;
+
+  filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
+
+  max-width: 700px;
+  min-height: 400px;
+}
+
+.inline{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+/*Checkout Layout ^^^*/
+
+/*Suggestions layout*/
+#suggested h2{
+    margin-left: 0;
+    color: white;
+    font-weight: light;
+}
+
+div.scrollmenu {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1rem;
+    padding: 1rem;
+
+    margin-bottom: 5rem;
+}
+
+div.scrollmenu .menuItem {
+    flex-shrink: 0;         
+    width: 250px;           
+    white-space: normal;
+}
+/*Suggestions layout ^^^*/

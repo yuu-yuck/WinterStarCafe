@@ -24,7 +24,7 @@
 
   position: absolute;
   top: 5%;
-  left: 3rem;
+  left: 1rem;
   z-index: 1;
 
 }
@@ -144,7 +144,6 @@ button a{
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;      
-  border: 1px solid #dee4e7;
   background-color: #202a2e;
   padding: 1.5em;
   border-radius: 3px;

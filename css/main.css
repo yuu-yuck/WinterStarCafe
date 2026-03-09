@@ -24,6 +24,7 @@ body {
 
 /*Creating a line element*/
 .element {
+  max-width: 100%;
   margin-bottom: 1rem;
   margin-top: 2rem;
   border-top-width: 0.05rem;
@@ -245,55 +246,6 @@ label {
 
 /*Product listing layout ^^^*/
 
-/*Checkout layout*/
-.checkoutLayout {
-  display: flex;   
-  gap: 1em;     
-  align-items: flex-start;
-}
-
-#orderSummary p,
-#paymentForm p{
-  font-size: 13px;
-}
-
-#orderSummary h4,
-#paymentForm h4{
-  margin-top: 0;
-
-  max-width: 100%;
-  padding-bottom:1em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #dee4e7;
-}
-
-#orderSummary,
-#paymentForm {
-  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;      
-  border: 1px solid #dee4e7;
-  background-color: #202a2e;
-  padding: 1.5em;
-  border-radius: 3px;
-
-  filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
-
-  max-width: 700px;
-}
-
-.inline{
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-}
-
-.topMargin{
-  margin-top: 7em;
-}
-/*Checkout layout ^^^*/
 
 h5{
   font-size: 15px;
@@ -307,6 +259,7 @@ li {
 }
 
 h1 {
+  margin-left:0;
   margin-top: 3rem;
   margin-bottom: 0.05rem;
   font-size: 42px;

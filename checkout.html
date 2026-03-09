@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
-        <link href="css/manu.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/checkout.css" rel="stylesheet">
 
 
         <!--Link to Lexend Font-->
@@ -29,49 +30,127 @@
       </nav>
     </header> 
 
-    <div class="checkoutLayout">
-      <div id="paymentForm">
-        <h4>PAYMENT FORM</h4>
+    <div id="cart" class="pageContent">
+      <h1>Shopping Cart</h1>
 
-          <form action="payment">
-            <input type="radio" name="paytype" id="payment">
-            <label for="payment">Debit</label>
-            <input type="radio" name="paytype" id="payment">
-            <label for="payment">Credit</label> <br> <br>
-            <label for="payment">Card Number:</label>
-            <input type="text" name="number" id="payment"> <br> <br>
-            <label for="payment">CV:</label>
-            <input type="text" name="cv" id="payment"> <br><br>
-            <label for="payment">Name:</label>
-            <input type="text" name="name" id="payment"> <br> <br>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </form> <br>
+      <div class="checkoutLayout">
+        <div id="paymentForm">
+          <h4>PAYMENT FORM</h4>
+
+            <form action="payment">
+              <input type="radio" name="paytype" id="payment">
+              <label for="payment">Debit</label>
+              <input type="radio" name="paytype" id="payment">
+              <label for="payment">Credit</label> <br> <br>
+              <label for="payment">Card Number:</label>
+              <input type="text" name="number" id="payment"> <br> <br>
+              <label for="payment">CV:</label>
+              <input type="text" name="cv" id="payment"> <br><br>
+              <label for="payment">Name:</label>
+              <input type="text" name="name" id="payment"> <br> <br>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </form> <br>
+        </div>
+
+        <div id="orderSummary">
+          <h4>ORDER SUMMARY</h4>
+
+          <div class="inline">
+            <h5>Cheese Pizza Qt: 1</h5> <h5>(M) $17.75</h5>
+          </div>
+
+          <div class="inline">
+            <h5>Strawberry Short Cake Qt: 2</h5> <h5>$7.75 x 2</h5>
+            
+          </div>
+
+          <p>Tax calculated based on shipping address.</p>
+
+          <div class="inline element">
+            <h5>Subtotal</h5> <h5>$33.25 CAD</h5>
+          </div>
+
+          <div class="inline">
+            <h5>Estimated Total</h5> <h5>$38.97 CAD</h5>
+          </div>
+
+          <button type="submit">Continue Shopping</button>
+        </div>
       </div>
 
-      <div id="orderSummary">
-        <h4>ORDER SUMMARY</h4>
+      <section id="suggested">
+        <h2>Suggested for you</h2>
+        <div class="scrollmenu">
+          <div class="menuItem">
+              <div class="container">
+                  <figure>
+                      <a href="menu.html#coffee"><img src="img/coffeeMenu_1.png" class="image">
+                      <div class="overlay"></div>
+                      </a>
+                  </figure>
+              </div>
+              <h3>COFFEE</h3>
+          </div>
 
-        <div class="inline">
-          <h5>Cheese Pizza 1</h5> <h5>(M) $17.75</h5>
+          <div class="menuItem">
+            <div class="container">
+              <figure>
+              <!--Image taken from ->(source:https://ca.pinterest.com/pin/15481192464051762/)-->
+                <a href="menu.html#refresher"> <img src="img/refresher_2.png" class="image">
+                  <div class="overlay"> </div>
+                </a> 
+              </figure>
+            </div>
+            <h3>REFRESHER</h3>
+          </div>
+
+          <div class="menuItem">
+            <div class="container">
+              <figure>
+                <!--Image taken from ->(source:https://ca.pinterest.com/pin/1759287348727807/)-->
+                <a href="menu.html#hotChocolate"> <img src="img/hotChocolate_1.png" class="image">
+                  <div class="overlay"> </div>
+                </a> 
+              </figure>
+            </div>
+          <h3>HOT CHOCOLATE</h3>
+          </div>
+
+          <div class="menuItem">
+            <div class="container">
+               <figure>
+                  <a href="menu.html#appetizer"> <img src="img/appetizer.png" class="image">
+                    <div class="overlay"> </div>
+                  </a> 
+                </figure>
+            </div>
+            <h3>APPETIZER</h3>
+          </div>
+
+          <div class="menuItem">
+              <div class="container">
+                  <figure>
+                      <a href="menu.html#main"><img src="img/pizza.png" class="image">
+                      <div class="overlay"></div>
+                      </a>
+                  </figure>
+              </div>
+              <h3>MAIN DISH</h3>
+          </div>
+
+          <div class="menuItem">
+            <div class="container">
+               <figure>
+                  <a href="menu.html#dessert"> <img src="img/cake_1.png" class="image">
+                    <div class="overlay"> </div>
+                  </a> 
+                </figure>
+            </div>
+            <h3>DESSERT</h3>
+          </div>
         </div>
-
-        <div class="inline">
-          <h5>Strawberry Short Cake 2</h5> <h5>$7.75</h5>
-        </div>
-
-        <p>Tax calculated based on shipping address.</p>
-
-        <div class="inline topMargin element">
-          <h5>Subtotal</h5> <h5>$33.25 CAD</h5>
-        </div>
-
-        <div class="inline">
-          <h5>Estimated Total</h5> <h5>$38.97 CAD</h5>
-        </div>
-
-        <button type="submit">CONTINUE SHOPPING</button>
-      </div>
+      </section>
     </div>
 
     <section id="footer">
