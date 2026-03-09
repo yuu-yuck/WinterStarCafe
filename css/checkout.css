@@ -7,7 +7,7 @@
 }
 
 #cart h5{
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 #cart h4{
@@ -21,6 +21,22 @@
     border-bottom-style: solid;
     border-bottom-color: #9caeb6;
 }
+
+.radioButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    width:1rem; 
+    
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#paymentForm button{
+    margin-top: -1rem;
+    margin-bottom:0;
+}
+
 .checkoutLayout {
   display: flex;   
   gap: 2rem;     
@@ -34,7 +50,6 @@
 
 #orderSummary,
 #paymentForm {
-  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;      
@@ -56,25 +71,37 @@
 /*Checkout Layout ^^^*/
 
 /*Suggestions layout*/
+#suggested button{
+    margin-bottom: 1rem;
+}
+
 #suggested h2{
     margin-left: 0;
     color: white;
     font-weight: light;
 }
 
-div.scrollmenu {
+/*(source: https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp)*/
+.scrollmenu {
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 1rem;
-    padding: 1rem;
+    overflow: auto; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 2rem;
 
     margin-bottom: 5rem;
+
 }
 
-div.scrollmenu .menuItem {
+.scrollmenu .menuItem {
     flex-shrink: 0;         
     width: 250px;           
-    white-space: normal;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#suggested .container{
+    padding-left: 1rem;
 }
 /*Suggestions layout ^^^*/

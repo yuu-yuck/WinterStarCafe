@@ -29,7 +29,19 @@
 #menu ol li {
     display: flex;
     text-align: left;  
-    width: 350px;   
+    width: 450px;   
+}
+
+#menu li a{
+    margin-left: 2rem;
+}
+
+#menu button{
+    display: block;
+    margin: 0 auto;
+
+    margin-bottom: 2rem;
+
 }
 
 .item-name {
