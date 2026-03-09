@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P02 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--Link to Lexend Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P02 - Style Guide Template</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>Other Templates</h3>
+        <a href="product_listing.html">Product Listing Template</a> <br>
+        <a href="checkout.html">Checkout Template</a>
+      </section>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        Find out more about our<a href="https://en.wikipedia.org/wiki/Party">Party Packages!</a> <!--Link destiation and intent subject to change-->
+
+        <h4>Implemented code:</h4>
+        <code>Find out more about our&lt;a href="https://en.wikipedia.org/wiki/Party" class="inTextLink"&gt; Party Packages!&lt;/a&gt;</code>
+       
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+         <h3>Navigation Link</h3>
+
+        <nav>
+          <a href="#" class="button">Scroll up</a>
+        </nav>
+        
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;a href="#" class="button"&gt;Scroll up&lt;/a&gt;
+        </code>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3> <!--Resource used for help: https://www.w3schools.com/tags/att_input_type_reset.asp-->
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;button type="submit"&gt;Submit&lt;/button&gt; <br>
+          &lt;button type="reset"&gt;Reset&lt;/button&gt; <br>
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <form>
+          <label>Delivery Address:</label>
+          <input type="text" placeholder="Type here..."><br>
+        </form>
+      
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;form&gt; <br>
+          &lt;label&gt;Delivery Address:&lt;/label&gt; <br>
+          &lt;input type="text" placeholder="Type here..."&gt; <br>
+          &lt;/form&gt;
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3> <!--Resource used for help: https://www.w3schools.com/tags/att_input_type_radio.asp-->
+
+        <input type="radio" id="credit" name="payment">
+        <label>Credit</label>
+        <input type="radio" id="debit" name="payment">
+        <label>Debit</label>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;input type="radio" id="credit" name="payment"&gt; <br>
+          &lt;label&gt;Credit&lt;/label&gt; <br>
+          &lt;input type="radio" id="debit" name="payment"&gt; <br>
+          &lt;label&gt;Debit&lt;/label&gt;
+        </code>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <a href="index.html"><img src="img/cake_1.png"></a> <!--Placeholder Picture Changed to Cake-->
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;a href="index.html"&gt;&lt;img src="cake_1.png"&gt;&lt;/a&gt;
+          
+
+        </code>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h1>Winter Star Cafe</h1>
+        <h2>About Us</h2>
+        <h3>Contact</h3>
+        <h4>Updates</h4>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;h1&gt;Winter Star Cafe&lt;/h1&gt; <br>
+          &lt;h2&gt;About Us&lt;/h2&gt; <br>
+          &lt;h3&gt;Contact&lt;/h3&gt; <br>
+          &lt;h4&gt;Updates&lt;/h4&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>Enjoy our beverages in the comfy atmosphere of our cafe, or order them for the comfort of your own home</p>
+        
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;p&gt;Enjoy our beverages in the comfy atmosphere of our cafe, or order them for the comfort of your own home&lt;/p&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <ol>
+          <li>Hot Chocolate</li>
+          <li>Tea</li>
+          <li>Coffee</li>
+          <li>Latte</li>
+          <li>Sides</li>
+        </ol>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;ol&gt; <br>
+          &lt;li&gt;Hot Chocolate&lt;/li&gt; <br>
+          &lt;li&gt;Tea&lt;/li&gt; <br>
+          &lt;li&gt;Coffee&lt;/li&gt; <br>
+          &lt;li&gt;Latte&lt;/li&gt; <br>
+          &lt;li&gt;Sides&lt;/li&gt; <br>
+          &lt;/ol&gt;
+        </code>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3> <!--Placeholder link destinations to be replaced later on-->
+        <a href="index.html">Home</a>
+        <a href="index.html">Menu</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Locations</a>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;a href="index.html"&gt;Home&lt;/a&gt; <br>
+          &lt;a href="index.html"&gt;Menu&lt;/a&gt; <br>
+          &lt;a href="index.html"&gt;About&lt;/a&gt; <br>
+          &lt;a href="index.html"&gt;Locations&lt;/a&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <ol>
+          <li><a href="index.html">Tea</a> ($2.50)</li>
+          <li><a href="index.html">Coffee</a> ($3.00)</li>
+          <li><a href="index.html">Latte</a> ($3.00)</li>
+        </ol>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;ol&gt; <br>
+          &lt;li&gt;&lt;a href="index.html"&gt;Tea&lt;/a&gt; ($2.50)&lt;/li&gt; <br>
+          &lt;li&gt;&lt;a href="index.html"&gt;Coffee&lt;/a&gt; ($3.00)&lt;/li&gt; <br>
+          &lt;li&gt;&lt;a href="index.html"&gt;Latte&lt;/a&gt; ($3.00)&lt;/li&gt; <br>
+          &lt;/ol&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <form action="payment">
+          <input type="radio" name="paytype" id="payment">
+          <label for="payment">Debit</label>
+          <input type="radio" name="paytype" id="payment">
+          <label for="payment">Credit</label> <br>
+          <label for="payment">Card Number:</label>
+          <input type="text" name="number" id="payment">
+        </form>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;form action="payment"&gt; <br>
+          &lt;input type="radio" name="paytype" id="payment"&gt; <br>
+          &lt;label for="payment"&gt;Debit&lt;/label&gt; <br>
+          &lt;input type="radio" name="paytype" id="payment"&gt; <br>
+          &lt;label for="payment"&gt;Credit&lt;/label&gt; &lt;br&gt; <br>
+          &lt;label for="payment"&gt;Card Number:&lt;/label&gt; <br>
+          &lt;input type="text" name="number" id="payment"&gt; <br>
+          &lt;/form&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <form>
+          <p>Tea ($2.50)</p>
+          <p>Coffee ($3.00)</p>
+          <p>Latte ($3.00)</p>
+          <p>Total: $8.50</p>
+          <button type="submit">Confirm Purchase</button>
+        </form>
+
+        <h4>Implemented code:</h4>
+        <code>
+          &lt;form&gt; <br>
+          &lt;p&gt;Tea ($2.50)&lt;/p&gt; <br>
+          &lt;p&gt;Coffee ($3.00)&lt;/p&gt; <br>
+          &lt;p&gt;Latte ($3.00)&lt;/p&gt; <br>
+          &lt;p&gt;Total: $8.50&lt;/p&gt; <br>
+          &lt;button type="submit"&gt;Confirm Purchase&lt;/button&gt; <br>
+          &lt;/form&gt;
+        </code>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <section id="branding">
+      <section>
+        <h3>Branding Ideas</h3>
+        <p>The company offers public spaces themed after winter/cool colors for leisure, work, or studying, while selling hot or cold drinks with sides to enjoy while doing so.</p>
+        <p>To potential customers, the cafe is a relaxation spot and eatery with branding and themes that evoke the same cozyness that comes with the winter season.</p>
+        <p>One major reason a customer might feel enticed to purchase products from the company would be the option of enjoying them in the cafes themselves, or taking the mixes home to make them there.</p>
+      </section>
+      <section>
+        <h3>Branding Components</h3>
+        <p>Potential fonts used for the site would be softer/minimalistic to fit with the cafe's relaxation based atmosphere</p>
+        <p>Colour Palettes and art direction for the website would aim for cooler colors with low saturation, with combinations of brown and light blue to represent both the winter and cafe theming</p>
+        <h3>Imagery examples (Not the exact images that will be used)</h3>
+        <img src="img/image1.png">
+        <p>Promotional pictures for menu/home pages (Source: https://share.google/rUekDremwxMm1WoFJ)</p>
+        <!--Snowflake symbol removed, as we ended up scrapping the idea for having it in the background-->
+      </section>
+    </section>
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Shaver-Troup, Bonnie. Creator. 2001. <strong>Lexend [Font]</strong>. Retrieved from <a href="https://fonts.google.com/share?selection.family=Lexend:wght@100..900|Orbitron:wght@400..900">Google Fonts</a>.</li>
+        <li>Ptecek, Anya. Creator. 2025. <strong>Hot Chocolate [Image]</strong>. Retrieved from <a href="https://www.delish.com/cooking/recipe-ideas/a63071910/hot-chocolate-recipe/">https://www.delish.com/cooking/recipe-ideas/a63071910/hot-chocolate-recipe/</a></li>
+        <li>alona_s. Creator. Year Unknown. <strong>Snowflake Vector [Image]</strong>. Retrieved from <a href="https://stock.adobe.com/ca/images/snowflake-sign-blue-snowflake-icon-isolated-on-white-background-snow-flake-silhouette-symbol-of-snow-holiday-cold-weather-frost-winter-design-element-vector-illustration/185758274">Adobe Stock</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
