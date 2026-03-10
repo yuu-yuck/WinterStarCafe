@@ -34,6 +34,55 @@ a:hover, a:focus {
 /*In-text Links ^^^*/
 
 /*Navigation styling*/
+.navbar {
+  width: 100%;
+  min-height: 100px;
+  background-color: #3b4b54;
+  border-bottom-style: solid;
+  border-bottom-color:#9caeb6;
+  border-bottom-width: 0.5px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;        
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav button {
+  margin-left: auto;
+  margin-top: 0;
+}
+
+nav img {
+  height: 70px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+/*scaled up the icon by 10% bigger. (source: https://www.w3schools.com/cssref/css3_pr_transform.php)*/
+nav img:hover, nav img:focus{
+  transform: scale(1.1);
+}
+
+.iconOverride{
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.iconOverride:hover, .iconOverride:focus {
+  background-color: transparent;
+  border: none;
+}
+
 nav a{
   display: inline-block;
   border: 2px solid;
@@ -81,7 +130,6 @@ button:hover, button:focus{
 /*User Input text box styling*/
 form {
   padding: 1rem;
-  background-color: #202a2e; /*Changed to match final website*/
   font-family: "Lexend";
   color: white;
   font-weight: bold;
@@ -90,15 +138,19 @@ form {
 
 input{
   background-color: white;
-  border-width:0.2em;
-  padding:0.3em;
+  padding: 0.5rem;
   margin-left: 0.5em;
-  border-color: #9caeb6;
+  border-radius: 2px;
+  border: none; 
 }
 
 label {
   font-size: 13px;
   color: white;
+}
+
+.inputGroup{
+  margin-bottom: 1rem;
 }
 /*User Input text box styling ^^^*/
 
@@ -167,9 +219,44 @@ label {
 /*Product listing layout ^^^*/
 
 /*Checkout layout*/
+
+.checkoutLayout h1{
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+.checkoutLayout h5{
+  margin-top: 3rem;
+}
+
+.checkoutLayout h4{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  max-width: 100%;
+  padding-bottom: 1rem;
+  border-bottom-width: 0.05rem;
+  border-bottom-style: solid;
+  border-bottom-color: #9caeb6;
+}
+
+.radioButton {
+  gap: 0.5rem; 
+    
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#paymentForm button{
+  margin-top: -1rem;
+  margin-bottom:0;
+}
+
 .checkoutLayout {
   display: flex;   
-  gap: 1em;     
+  gap: 2rem;     
   align-items: flex-start;
 }
 
@@ -178,28 +265,19 @@ label {
   font-size: 13px;
 }
 
-#orderSummary h4,
-#paymentForm h4{
-  margin-top: 0;
-
-  max-width: 100%;
-  padding-bottom:1em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #dee4e7;
-}
-
 #orderSummary,
 #paymentForm {
-  /*I did some research on the flex properties: https://www.w3schools.com/cssref/css3_pr_flex.php*/
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;      
-  border: 1px solid #dee4e7;
-  background-color: #202a2e; /*Changed to match final website*/
+  background-color: #202a2e;
   padding: 1.5em;
+  border-radius: 3px;
 
   filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
+
+  max-width: 700px;
+  min-height: 400px;
 }
 
 .inline{
@@ -207,11 +285,43 @@ label {
   justify-content: space-between;
   max-width: 100%;
 }
+/*Checkout Layout ^^^*/
 
-.topMargin{
-  margin-top: 7em;
+/*Suggestions layout*/
+#suggested button{
+  margin-bottom: 1rem;
 }
-/*Checkout layout ^^^*/
+
+#suggested h2{
+  margin-left: 0;
+  color: white;
+  font-weight: 300;
+}
+
+/*(source: https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp)*/
+.scrollmenu {
+  display: flex;
+  overflow: auto; 
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+
+  margin-bottom: 5rem;
+
+}
+
+.scrollmenu .menuItem {
+  flex-shrink: 0;         
+  width: 250px;           
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#suggested .container{
+  padding-left: 1rem;
+}
+/*Suggestions layout ^^^*/
 
 h5{
   font-size: 15px;

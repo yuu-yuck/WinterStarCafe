@@ -23,7 +23,8 @@
       <p>A template you can use to start building out your own style guides with.</p>
 
 
-      <nav>        
+      <nav>    
+            
         <a href="#interactive_elements">Interactive Elements</a>
         <a href="#text_elements">Text Elements</a>
         <a href="#combined_elements">Combined Elements</a>
@@ -202,17 +203,35 @@
 
       <section class="element">
         <h3>Main Navigation</h3> <!--Placeholder link destinations to be replaced later on-->
-        <a href="index.html">Home</a>
-        <a href="index.html">Menu</a>
-        <a href="index.html">About</a>
-        <a href="index.html">Locations</a>
+
+         <div class="navbar">
+            <nav>  
+                <!--Created brand Icon in Figma-->
+                <a href="#home" class="iconOverride"><img src="img/icon2.png" alt="logo"></a>
+
+                <a href="#aboutUs">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="#footer">Locations</a>
+                <a href="#contactUs">Contact Us</a>
+                <a href="checkout.html">Checkout</a>
+
+            </nav>
+          </div> 
 
         <h4>Implemented code:</h4>
         <code>
-          &lt;a href="index.html"&gt;Home&lt;/a&gt; <br>
-          &lt;a href="index.html"&gt;Menu&lt;/a&gt; <br>
-          &lt;a href="index.html"&gt;About&lt;/a&gt; <br>
-          &lt;a href="index.html"&gt;Locations&lt;/a&gt;
+          &lt;div class="navbar"&gt; <br>
+            &lt;nav&gt;<br>
+                &lt;a href="#home" class="iconOverride"&gt;&lt;img src="img/icon2.png" alt="logo"&gt;&lt;/a&gt; <br><br>
+
+                &lt;a href="#aboutUs"&gt;About Us&lt;/a&gt;<br>
+                &lt;a href="menu.html"&gt;Menu&lt;/a&gt;<br>
+                &lt;a href="#footer"&gt;Locations&lt;/a&gt;<br>
+                &lt;a href="#contactUs"&gt;Contact Us&lt;/a&gt; <br>
+                &lt;a href="checkout.html"&gt;Checkout&lt;/a&gt; <br>
+
+            &lt;/nav&gt; <br>
+          &lt;/div&gt;<br>
         </code>
       </section>
 

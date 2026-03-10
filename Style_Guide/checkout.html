@@ -31,19 +31,36 @@
         <h4>PAYMENT FORM</h4>
 
           <form action="payment">
-            <input type="radio" name="paytype" id="payment">
-            <label for="payment">Debit</label>
-            <input type="radio" name="paytype" id="payment">
-            <label for="payment">Credit</label> <br> <br>
-            <label for="payment">Card Number:</label>
-            <input type="text" name="number" id="payment"> <br> <br>
-            <label for="payment">CV:</label>
-            <input type="text" name="cv" id="payment"> <br><br>
-            <label for="payment">Name:</label>
-            <input type="text" name="name" id="payment"> <br> <br>
+
+            <div class="radioButton">
+              <label for="credit">Credit</label>
+              <input type="radio" id="credit" name="payment">
+            </div>
+                
+            <div class="radioButton">
+              <label for="debit">Debit</label>
+              <input type="radio" id="debit" name="payment">
+            </div>
+
+            <div class="inputGroup">
+              <label>Card Number</label>
+              <input type="text" name="number" placeholder="Type here...">
+            </div>
+
+            <div class="inputGroup">
+              <label>CVC</label>
+              <input type="text" name="number" placeholder="Type here...">
+  
+            </div>
+
+            <div class="inputGroup">
+              <label>Your Name</label>
+              <input type="text" name="number" placeholder="First and Last Name">
+            </div>
+
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
-          </form> <br>
+          </form> 
       </div>
 
       <div id="orderSummary">

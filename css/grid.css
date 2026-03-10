@@ -223,6 +223,10 @@ button a{
   margin-right: 2rem;  
 }
 
+.footerItemRight button{
+  margin-bottom: 1rem;
+}
+
 .splitScreen{
   display: flex; 
   flex: 1;             
@@ -230,6 +234,20 @@ button a{
   gap: 1rem;                   
   flex-wrap: wrap;         
 }
+
+/*bottom Footer*/
+#bottomFooter{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  border-top: 1px solid #9caeb6;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/*bottom Footer ^^^*/
+
 /*Webpage footer layout^^^*/
 
 #paymentForm h4{
