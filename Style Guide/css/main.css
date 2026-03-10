@@ -64,7 +64,6 @@ button{
   border-width:0.2em;
   padding: 0.5em;
   margin-top: 2em;
-  border-radius: 5px;
   border-color: #9caeb6;
 }
 
@@ -90,7 +89,6 @@ form {
 }
 
 input{
-  border-radius: 50px;
   background-color: white;
   border-width:0.2em;
   padding:0.3em;
@@ -200,7 +198,6 @@ label {
   border: 1px solid #dee4e7;
   background-color: #202a2e; /*Changed to match final website*/
   padding: 1.5em;
-  border-radius: 3px;
 
   filter: drop-shadow(3px 3px 3px rgb(45, 45, 45));
 }
